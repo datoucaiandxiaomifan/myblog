@@ -1,0 +1,153 @@
+.inner{
+	width: 860px;
+	height: 300px;
+	margin: 20px auto;
+	border: 1px #AAD1F7 solid;
+	padding: 20px;
+	/*background: red;*/
+}
+.login{
+	
+}
+.login .l{
+	width: 500px;
+	border-right: 1px #AAD1F7 dashed;
+	float: left;
+}
+.l h2{
+	height: 60px;
+	color: #78b7f4;
+	font-size: 40px;
+	font-weight: bold;
+
+}
+.login .form{
+	display: block;
+	margin-top: 0em;
+	padding: 10px 10px 0 120px;
+
+}
+.login .form input{
+	padding: 1px 0px;
+}
+.login .form p{
+	padding-left: 66px;
+	margin: 0 0 1.5em;
+	color: #888888;
+	position: relative;
+	zoom: 1;
+}
+.lregist{
+	display: inline-block;
+	width: 86px;
+	height: 30px;
+	margin: 0 70px;
+	background: url(img/login.gif) no-repeat 0 -210px;
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+}
+.login .r{
+	width: 300px;
+	float: right;
+}
+.login .rcon{
+	padding: 70px 0 0 80px;
+}
+.login .fastregist{
+	display: inline-block;
+	width: 86px;
+	height: 30px;
+	background: url(img/login.gif) no-repeat 0 -180px;
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 1em;
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-width:1200px){
+	header{
+		width: auto;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+}
+
+
+@media (max-width:959px){
+	#nav{
+		width: auto;
+		margin: auto 50px;
+	}
+	.inner {
+		width: 660px;
+	}
+	.login .l {
+		width: 350px;
+	}
+	.login .form {
+		 padding: 10px 0px; 
+	}
+}
+
+@media (max-width: 767px){
+	#nav ul li {
+		width: 90px;
+	}
+	.inner{
+		width: 400px;
+		height: 350px;
+		margin: 20px auto;
+		border: 1px #AAD1F7 solid;
+		padding: 20px;
+	}
+	.login .l{
+		width: 350px;
+		border-right: none;
+		border-bottom: 1px #AAD1F7 dashed;
+		float: none;
+	}
+	.login .form{
+		margin-top: 0em;
+		padding: 10px 0;
+	}
+
+	.login .r{
+		float: none;
+	}
+	.login .rcon{
+		margin: 20px auto;
+		padding: 0px 0 0 136px;
+	}
+}
+
+@media ( max-width: 480px ){
+	#nav{
+		margin: auto 25px;
+	}
+	#nav ul li {
+		width: 60px;
+	}
+	.inner{
+		width: 300px;
+	}
+	.login .l{
+		width: 250px;
+	}
+	.login .rcon{
+		padding: 0px 0 0 70px;
+	} 
+	.login .form p {
+		 padding-left: 0;  
+	}
+}
+
+@media ( max-width: 480px ) and ( min-resolution: 2dppx ), ( max-width: 480px ) and ( -webkit-min-device-pixel-ratio: 2 ){
+  
+}

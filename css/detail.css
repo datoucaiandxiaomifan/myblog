@@ -1,0 +1,219 @@
+.artical{
+	margin: 20px;
+}
+.index_about {
+float: left;
+width: 740px;
+overflow: hidden;
+background: url(img/r_line.jpg) repeat-y right;
+margin: 10px 0;
+}
+.c_title{
+font-size: 22px;
+margin: 20px 0;
+text-align: center;
+color: #333;
+}
+.box_c {
+border: #ccc 1px dashed;
+text-align: center;
+padding: 5px 0;
+margin: 20px 30px 20px 0;
+color: #999;
+}
+.box_c span {
+margin: 0 10px;
+}
+.infos {
+overflow: hidden;
+margin: 20px 30px 20px 0;
+line-height: 28px;
+font-size: 14px;
+text-indent: 2em;
+color: #666;
+}
+.ds_thread {
+	margin-right: 20px;
+clear: both;
+position: relative;
+overflow: visible;
+_zoom: 1;
+}
+.ds-comments {
+width: 100%;
+border-bottom: 1px solid rgba(0,0,0,0.13);
+}
+.ds-post {
+width: 100%;
+overflow: hidden;
+clear: both;
+border-top: 1px solid rgba(0,0,0,0.13);
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.comment{
+	border:1px solid #cfcfcf;
+	margin:20px 0;
+}
+
+.comment_ifmt {
+	border: #ccc 1px dashed;
+	min-height: 30px;
+}
+.comment_ifmt p {
+	display: inline-block;
+	/*color:#191970;*/
+	padding-left: 20px;
+	height: 30px;
+	line-height:30px;
+
+	font-size: 12px;
+	margin-right: 8px;
+	color: #999;
+}
+.com_con {
+	padding:10px 0 10px 0;
+	color:#464646;
+	text-indent: 10px;
+}
+.ds_replybox form{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: baseline;
+	font: inherit;
+	line-height: inherit;
+	background: none;
+	width: auto;
+	float: none;
+	overflow: visible;
+	transition: none;
+}
+.ds_textarea_wrapper {
+position: relative;
+border: 1px solid #ccc;
+border-bottom: none;
+padding-right: 20px;
+background: #fff url("img/bg_sprites.png") 0 -90px repeat-x;
+overflow: hidden;
+}
+.ds_rounded_top {
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+}
+.ds_textarea_wrapper textarea {
+display: block;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 13px;
+line-height: 20px;
+border: none;
+box-shadow: none;
+-webkit-appearance: none;
+overflow: auto;
+padding: 10px;
+height: 54px;
+margin: 0;
+resize: none;
+color: #999;
+width: 100%;
+vertical-align: baseline;
+font: inherit;
+transition: none;
+}
+.ds_post_toolbar {
+position: relative;
+width: 100%;
+box-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+.ds_post_options {
+position: relative;
+margin-right: 100px;
+height: 30px;
+border: 1px solid #ccc;
+border-right: none;
+border-bottom-color: #aaa;
+border-bottom-left-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+}
+.ds_gradient_bg {
+background: url("img/bg_sprites.png") 0 -60px repeat-x;
+/*background-color: #e6e6e6;*/
+}
+.ds_post_button {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+position: absolute;
+right: 0;
+top: 0;
+height: 32px;
+width: 100px;
+text-align: center;
+text-shadow: 0 1px 0 #fff;
+color: #555;
+font-size: 14px;
+font-weight: bold;
+border: 1px solid #ccc;
+border-bottom-color: #aaa;
+border-bottom-right-radius: 3px;
+-webkit-border-bottom-right-radius: 3px;
+background-color: #e6e6e6;
+background-repeat: no-repeat;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fcfcfc), color-stop(25%, #fcfcfc), to(#e6e6e6));
+background-image: -webkit-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+background-image: -moz-linear-gradient(top, #fcfcfc, #fcfcfc 25%, #e6e6e6);
+background-image: -ms-linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+background-image: linear-gradient(#fcfcfc, #fcfcfc 25%, #e6e6e6);
+transition: all .15s linear;
+-webkit-transition: all .15s linear;
+-moz-transition: all .15s linear;
+box-shadow: inset 0 0 1px #fff;
+cursor: pointer;
+margin: 0;
+padding: 0;
+border-radius: 0;
+}
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width:1200px){
+	
+}
+@media (max-width:1200px){
+	.index_about {
+		float: none;
+		width: 810px;
+		background: none; 
+		margin: 10px 66px;
+	}
+}
+
+@media (max-width:959px){
+	.index_about {
+		width: 606px;
+	}
+}
+
+@media (max-width: 767px){
+	.index_about {
+		width: 308px; 
+		margin: 10px 70px;
+	}
+}
+
+@media ( max-width: 480px ){
+	.index_about {
+		width: 300px; 
+		margin: 10px;
+	}
+}
+
+@media ( max-width: 480px ) and ( min-resolution: 2dppx ), ( max-width: 480px ) and ( -webkit-min-device-pixel-ratio: 2 ){
+  
+}
+

@@ -1,0 +1,993 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	
+}
+li,a{
+	text-decoration: none;			
+}
+body{
+	color: #999999;
+	/*background:#D0E7E1 url(img/90304_top.jpg)  50% top scroll no-repeat;*/
+}
+.block{
+	min-height:750px;
+	color: white;
+}
+/*入口开始*/
+#sec1{
+	background: #f8e6f8;
+	}
+/*导航栏*/
+#nav{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	-webkit-box-shadow: 0 2px 8px #acaeaf;
+	box-shadow: 0 2px 8px #acaeaf;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+#nav .pic{
+	width: 38px;
+	background: url(img/cx.png) no-repeat;
+}
+#nav .active{
+  background: #f8e6f8;
+}
+.toggle-btn{
+  display: none;
+  z-index: 10;
+}
+#nav ul{
+	width: 650px;
+	margin: 0px auto;
+	font:bold 0/50px Arial;
+	text-align:center;
+}
+#nav li{
+	display: inline-block;
+	position:relative;
+    padding:0 14px;
+    font-size: 15px;
+    text-shadow:1px 2px 4px rgba(0,0,0,.3);
+}
+#nav li.sep{
+	width: 2px;
+	height: 12px;
+	padding: 0;
+	background: black;
+	background-image: -webkit-linear-gradient(#74ecf3 0%,#ecea52 50%,#ee9797 100%);
+}
+#nav ul li a{
+	display: inline-block;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+#nav ul li a:hover{
+	background: #f8e6f8;
+	-webkit-transform:rotate(10deg);
+    -moz-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+    -ms-transform:rotate(10deg);
+    transform:rotate(10deg);
+}
+#nav ul li a,
+#nav ul li a:hover{
+  color:#999999;
+}
+#cxm{
+	display:none;
+}
+/*导航栏结束*/
+/*特效动画*/
+#container{
+	height: 600px;
+	padding: 100px 0 0 20px;
+	/*background: #000;*/
+	background-image: -webkit-gradient(radial, 50% 70%, 30, 50% 70%, 400, from(rgba(168, 241, 241, 0.3)), to(rgba(168, 241, 241, 0)));
+	-webkit-perspective: 800px;
+	-webkit-perspective-origin: 50% 25px;
+}
+#mof{
+	height: 200px;
+	width: 200px;
+	margin: 100px auto;
+	/*overflow: hidden;*/
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+    -webkit-animation: xxx 15s linear infinite;
+}
+@-webkit-keyframes xxx{
+    from{
+       -webkit-transform: rotateY(0); 
+    }
+    to{
+      -webkit-transform: rotateY(-360deg);   
+    }
+}
+#mof .cube{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	border-radius: 12px;
+	/*background: rgba(255,255,255,0.6);*/
+	border: 1px solid #fff;
+	font: bold 40pt/200px "Time New Roman",Times,serif;
+	color: #000;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.6;
+	filter:alpha(opacity:60);
+}
+.one{
+	background: rgba(219,201,217,0.6);
+	-webkit-transform: scale3d(1.2,1.2,1.2) rotateX(90deg) translateZ(100px) ;
+}
+.four{
+	background: rgba(235,178,242,0.6);
+    -webkit-transform: scale3d(1.2,1.2,1.2) rotateY(180deg) translateZ(100px);
+}
+.three{
+	background: rgba(116,236,243,0.6);
+    -webkit-transform: scale3d(1.2,1.2,1.2) rotateY(90deg) translateZ(100px);
+}
+.five{
+	background: rgba(181,240,136,0.6);
+    -webkit-transform: scale3d(1.2,1.2,1.2) rotateY(-90deg) translateZ(100px);
+}
+.six{
+	background: rgba(236,234,82,0.6);
+    -webkit-transform: scale3d(1.2,1.2,1.2) rotateX(-90deg) translateZ(100px);
+}
+.two{
+	background: rgba(238,151,151,0.6);
+    -webkit-transform: scale3d(1.2,1.2,1.2) translateZ(100px);
+}
+.seven{
+	/*background: rgba(255,255,255,0.6);*/
+	width: 30px;
+	height: 30px;
+	border-right: 3px solid #999999;
+	border-bottom: 3px solid #999999; 
+	position: absolute;
+	left: 660px;
+	bottom: 100px;
+	-webkit-transform:rotate(45deg);
+}
+/*特效动画结束*/
+/*blog*/
+#blog{
+	color: #999999;
+	cursor: pointer;
+	position: fixed;
+	left: 20px;
+	bottom: 150px;
+	z-index: 10;
+}
+.span1{
+	width: 15px;
+	height: 15px;
+	margin: 4px;
+	border-radius: 15px;
+	background: pink;
+	border: 1px solid #e6e4e4;
+	float: left;
+}
+.span2{
+	width: 40px;
+	margin: 2px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 18px;
+}
+/*blog结束*/
+/*入口结束*/
+/*个人信息*/
+#sec2{
+	background:#faaff2;
+}
+#pers1{
+	width: 650px;
+	margin: 0 auto;
+	padding: 60px 20px 20px 20px;
+}
+.link{
+	display: inline-block;
+	margin: 0 50px;
+	cursor: pointer;
+	transition: 0.4s ease-in;
+}
+.l1{
+	width: 80px;
+	height: 80px;
+	background: url(img/blog.png) no-repeat;
+}
+.l2{
+	width: 150px;
+	height: 220px;
+	background: url(img/my2.png) no-repeat;
+}
+.l3{
+	width: 80px;
+	height: 80px;
+	background: url(img/email.png) no-repeat;
+}
+.link:hover{
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+#pers2{
+	margin: 50px 0 0 270px;
+	float: left;
+	/*color: #999999;*/
+	/*color: #414142;*/
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+}
+#pers2 li{
+	height: 40px;
+	line-height: 40px;
+}
+#pers2 li span{
+	display: inline-block;
+	text-align: right;
+	/*width: 70px;*/
+}
+#pers3{
+	/*width: 550px;*/
+	margin:50px 0 0 140px;
+	float: left;
+	/*color: #999999;*/
+	/*color: #414142;*/
+    font-family: "Microsoft YaHei";
+    font-weight: bold;
+}
+#pers3 p{
+	/*margin-bottom: 100px;*/
+	text-align: left;
+	padding: 10px;
+}
+
+/*个人信息结束*/
+/*技能*/
+#sec3{
+	background:#88c8f9;
+    padding: 6em 4em 4em 4em;
+    text-align: center;
+    color: white;
+}
+#skill{
+	margin: 3em;
+}
+#sec3 h2, em, #information {
+    display: block;
+    /*font-family: "Microsoft YaHei";*/
+	font-size: 46px;
+	font-weight: normal;
+	/*color: white;*/
+}
+
+#sec3 a {
+    color: #414142;
+	font-style: normal;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#sec3 a:hover {
+  text-decoration: underline;
+}
+.wrapper {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  vertical-align: top;
+  margin: 1em 2em 2em 0;
+  cursor: pointer;
+  position: relative;
+  font-family: Tahoma, Arial;
+  -webkit-perspective: 4000px;
+  -moz-perspective: 4000px;
+  -ms-perspective: 4000px;
+  -o-perspective: 4000px;
+  perspective: 4000px;
+}
+  
+.item {
+  height: 100px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform .6s;
+	-moz-transition: -moz-transform .6s;
+	-ms-transition: -ms-transform .6s;
+	-o-transition: -o-transform .6s;
+	transition: transform .6s;
+}
+  
+.item:hover {
+  -webkit-transform: translateZ(-50px) rotateX(95deg);
+  -moz-transform: translateZ(-50px) rotateX(95deg);
+  -ms-transform: translateZ(-50px) rotateX(95deg);
+  -o-transform: translateZ(-50px) rotateX(95deg);
+  transform: translateZ(-50px) rotateX(95deg);
+}
+   
+.item img {
+   display: block;
+   position: absolute;
+   top: 0;
+   border-radius: 3px;
+   box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+   -webkit-transform: translateZ(50px);
+   -moz-transform: translateZ(50px);
+   -ms-transform: translateZ(50px);
+   -o-transform: translateZ(50px);
+   transform: translateZ(50px);
+   -webkit-transition: all .6s;
+   -moz-transition: all .6s;
+   -ms-transition: all .6s;
+   -o-transition: all .6s;
+   transition: all .6s;
+   width: 310px; 
+   height: 100px;
+ }
+    
+ .item .information {
+   display: block;
+   position: absolute;
+   top: 0;
+   height: 80px;
+   width: 290px;
+   text-align: left;
+   border-radius: 15px;
+   padding: 10px;
+   color:#414142;
+   font-size: 12px;
+   text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+   box-shadow: none;
+   background: rgb(236,241,244);
+   background: -webkit-linear-gradient(to bottom,  rgba(236,241,244,1) 0%,rgba(190,202,217,1) 100%);
+    background: -ms-linear-gradient(to bottom,  rgba(236,241,244,1) 0%,rgba(190,202,217,1) 100%);
+    background: linear-gradient(to bottom,  rgba(236,241,244,1) 0%,rgba(190,202,217,1) 100%);
+
+    -webkit-transform: rotateX(-90deg) translateZ(50px);
+    -moz-transform: rotateX(-90deg) translateZ(50px);
+    -ms-transform: rotateX(-90deg) translateZ(50px);
+    -o-transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(50px);
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+ }
+    
+ .information strong {
+ 	/*color:;*/
+   display: block;
+   margin: .2em 0 .5em 0;
+   font-size: 20px;
+   font-family: "Oleo Script";
+  }
+.item:hover img {
+  box-shadow: none;
+  border-radius: 15px;
+}
+      
+.item:hover .information {
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+  border-radius: 3px;
+ }
+
+
+/*技能结束*/
+/*学生工作经历*/
+#sec4{
+	background:#74ecf3;
+}
+#title{
+	width: 300px;
+	margin: 0 auto;
+	padding: 160px 20px 20px 20px;
+	text-align: center;
+}
+#title h2{
+	font-size: 46px;
+	font-weight: normal;
+}
+#exp_con{
+	height: auto;
+	width: auto;
+	margin: 50px 0 0 100px;
+}
+#timebox{
+	margin-left: 260px;
+	font-size: 29px;
+}
+#timebox li{
+	display: inline-block;
+	margin-top: 5px;
+}
+#timebox .time2{
+	margin-left: 90px;
+}
+#timeline{
+	height: 27px;
+	width: 868px;
+	margin-left: 100px;
+	background: url(img/timeline.png) no-repeat center;
+}
+#stubox{
+	margin-left: 240px;
+}
+#stubox li{
+	display: inline-block;
+	width: 330px;
+	vertical-align: top;
+}
+#stubox li label{
+	display: block;
+}
+#stubox .position{
+	margin-top: 10px;
+	font-size: 26px;
+	font-weight: bold;
+}
+#stubox .duty{
+	margin-top: 10px;
+	font-size: 18px;
+}
+/*学生工作经历结束*/
+/*项目经历*/
+#sec5{
+	background:#b5f088;
+}
+#sec5 .pro{
+	width: 300px;
+	margin: 0 auto;
+	padding: 60px 20px 20px 0px;
+	text-align: center;
+}
+#sec5 .pro h2{
+	font-size: 46px;
+	font-weight: normal;
+}
+#sec5 .pic{
+	float: left;
+	position: absolute;
+	border: 1px solid #ccc;
+	padding: 10px;
+	cursor: pointer;
+
+	-webkit-box-shadow:5px 5px 5px rgba(135,139,144,0.4);
+	-moz-box-shadow:5px 5px 5px rgba(135,139,144,0.4);
+	-o-box-shadow:5px 5px 5px rgba(135,139,144,0.4);
+	-ms-box-shadow:5px 5px 5px rgba(135,139,144,0.4);
+	box-shadow:5px 5px 5px rgba(135,139,144,0.4);
+
+	-webkit-transition:all 1s ease-in-out;
+	-moz-transform:all 1s ease-in-out;
+	-o-transform:all 1s ease-in-out;
+	-ms-transform:all 1s ease-in-out;
+	transform:all 1s ease-in-out;
+}
+#pro1{
+	margin: 0px 50px 50px 200px;
+	z-index: 1;
+
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
+#pro2{
+	margin: 0px 50px 50px 700px;
+
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+
+}
+
+#pro3{
+	margin: 240px 50px 50px 200px;
+	
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	transform: rotate(10deg);
+
+}
+
+#pro4{
+	margin: 240px 50px 50px 1000px;
+
+	-webkit-transform: rotate(-10deg);
+	-moz-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	-ms-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+
+}
+
+#pro1:hover,#pro2:hover,#pro3:hover,#pro4:hover{
+	-webkit-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	transform:rotate(0deg);
+
+	-webkit-transform:scale(1.2);
+	-moz-transform:scale(1.2);
+	-o-transform:scale(1.2);
+	-ms-transform:scale(1.2);
+	transform:scale(1.2);
+
+	-webkit-box-shadow:10px 10px 10px rgba(50,50,50,0.4);
+	-moz-box-shadow:10px 10px 10px rgba(50,50,50,0.4);
+	-o-box-shadow:10px 10px 10px rgba(50,50,50,0.4);
+	-ms-box-shadow:10px 10px 10px rgba(50,50,50,0.4);
+	box-shadow:10px 10px 10px rgba(50,50,50,0.4);
+}
+#sec5 .pic p{
+	color:gray;
+}
+/*项目经历结束*/
+/*娱乐*/
+#sec6{
+	background:#ecea52;
+}
+/*娱乐结束*/
+/*联系我*/
+#sec7{
+	background:#ee9797;
+}
+#sec7 p{
+	display: block;
+	position: relative;
+	top:300px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+#sec7 p a{
+	color: #fff;
+}
+/*联系我结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width:1268px){
+  /*入口*/
+  	.seven{
+		left: 600px;
+	}
+
+
+/*个人信息*/
+	/*#pers2{
+		margin: 50px 0 0 130px;
+	}
+	#pers3{
+		margin:50px 0 0 70px;
+	}*/
+
+
+/*技能介绍*/
+/*学生工作经历*/
+	#exp_con {
+		margin: 50px 0 0 0px;
+	}
+	#timebox {
+		margin-left: 130px;
+	}
+	#timeline {
+		margin-left: 0px;
+	}
+	#stubox {
+		margin-left: 120px;
+	}
+
+/*项目介绍*/
+	#pro1{
+		margin: 0px 50px 50px 50px;
+		z-index: 0;
+	}
+	#pro1,#pro2,#pro4,#pro3{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	#pro2{
+		margin: 0px 50px 50px 400px;
+	}
+
+	#pro3{
+		margin: 240px 50px 50px 50px;
+	}
+	
+	#pro4{
+		margin: 240px 50px 50px 700px;
+	}
+
+	#pro1:hover,#pro2:hover,#pro3:hover,#pro4:hover{
+		-webkit-transform:none;
+		-moz-transform:none;
+		-o-transform:none;
+		-ms-transform:none;
+		transform:none;
+
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		-ms-box-shadow:none;
+		box-shadow:none;
+	}
+
+/*娱乐*/
+/*联系我*/
+}
+
+@media (max-width:959px){
+	/*入口*/
+    .seven{
+	    left: 450px;
+	}
+
+
+/*个人信息*/
+	.link{
+		margin: 0 30px;
+	}
+	#pers1{
+		width: 540px;
+	}
+	#pers2{
+		margin: 50px 0 0 200px;
+		float: none;
+	}
+	#pers3{
+		margin:50px 0 0 198px;
+		float: none;
+	}
+	
+/*技能介绍*/
+/*学生工作经历*/
+	#timebox {
+		margin-left: 260px;
+	}
+	#timebox .time2 {
+		margin-left: 0px;
+	}
+	#timeline {
+		height: 27px;
+		width: 500px;
+		margin-left: 100px;
+	}
+	#timebox li {
+		display:block;
+		margin-top: 10px;
+	}
+	#stubox {
+		margin-left: 220px;
+	}
+
+
+/*项目介绍*/
+	#sec5{
+		height:1000px;
+	}
+	#pro1{
+		margin: 0px 0 0 70px;
+	}
+	#pro2{
+		margin: 340px 0 0 90px;
+	}
+	#pro3{
+		margin: 580px 0 0 40px;
+	}
+	#pro4{
+		margin: 0px 0 0 470px;
+	}
+	
+
+
+/*娱乐*/
+/*联系我*/
+
+}
+
+@media (max-width: 767px){
+/*入口*/
+  	.seven{
+		left: 320px;
+	}
+	#nav .pic{
+		height: 0;
+	}
+	#nav ul{
+		width: 450px;
+		font:bold 0/30px Arial;
+	}
+		  
+	#nav li.sep{
+		 width:0;
+		 height: 0;
+	  	/*display:none;*/
+	}
+	#cxm{
+		width: 70px;
+		height: 60px;
+		position: relative;
+		top:30px;
+		left: 30px;
+		display: block;
+		background: url(../img/cx1.png) no-repeat;
+	}
+	  /* 切换按钮 */
+	  .toggle-btn{
+	    display: inline-block;
+	    font-size: 25px;
+	    text-decoration: none;
+	    background: pink;
+	    color: #fff;
+	    padding: 7px 10px;
+	    position: absolute;
+	    right: 10px;
+	    top: 50px;
+	  }
+	  
+	  /* 隐藏关闭按钮 */
+	  #nav .close{
+	    display: none;
+	  }
+	  
+	  /* 导航为目标状态的时候显示关闭按钮 */
+	  #nav:target .close{
+	    display: inline-block;
+	  }
+	  
+	  /* 初始隐藏导航 */
+	  #nav{
+	    display: none;
+	    background: none;
+	    -webkit-box-shadow:none;
+		box-shadow:none;
+	  }
+	  
+	  /* 导航为目标状态时的样式 */
+	  #nav:target{
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    padding-top: 70px;
+	    width: 100%;
+	  }
+	  /* 目标状态下的导航的 ul 标签 */
+	  #nav:target ul{
+	    background: pink;
+	  }
+	  /* 目标状态下的导航的 li 与 a */
+	  #nav:target li, #nav:target li a{
+	    display: block;
+	    color: #eee;
+	    /*text-align: left;*/
+	  }
+	  /* 目标状态下的导航的列表下的 a 标签的悬停样式 */
+	  #nav:target li a:hover{
+	    background: #ee9797;
+	    color:#eee;
+	    -webkit-transform:rotate(0deg);
+	    -moz-transform:rotate(0deg);
+	    -o-transform:rotate(0deg);
+	    -ms-transform:rotate(0deg);
+	    transform:rotate(0deg);
+	  }
+	  /* 目标状态下导航的激活状态的样式 */
+	  #nav:target .active{
+	    background: #ee9797;
+	  }
+	#blog {
+		left: 10px;
+		bottom: 50px;
+	}
+	#blog .span1{
+		margin-left: 6px;
+	}
+	#blog .span2{
+		width: 32px;
+		margin:0;
+		font-weight: normal;
+		font-size: 15px;
+		
+	}
+	#blog .span1,.span2{
+		float: none;
+		display: block;
+	}
+
+/*个人信息*/
+	#pers1{
+		width: 400px;
+		margin: 0 auto;
+		padding: 60px 10px 20px 50px;
+	}
+	.link{
+		margin: 0;
+	}
+	#pers2{
+		margin: 50px 0 0 180px;
+		float: none;
+	}
+	#pers3{
+		margin:50px 0 0 176px;
+		float: none;
+	}
+/*技能介绍*/
+	#sec3 {
+		padding: 6em 2em 4em 2em;
+}
+
+/*学生工作经历*/
+	#timebox {
+		margin-left: 120px;
+	}
+	#timeline {
+		height: 27px;
+		width: 400px;
+		margin-left: 50px;
+	}
+	#stubox {
+		margin-left: 90px;
+	}
+	#stubox li {
+		width: 340px;
+	}
+
+/*项目介绍*/
+	#sec5 #pro1 img{
+		width: 190px;
+		height: 150px;
+	}
+	#sec5 #pro2 img{
+		width: 380px;
+		height: 160px;
+	}
+	#sec5 #pro3 img{
+		width: 380px;
+		height: 180px;
+		
+	}
+	#sec5 #pro4 img{
+		width: 130px;
+		height: 200px;		
+	}
+	#pro1{
+		margin: 0px 0 0 40px;
+	}
+	#pro2{
+		margin: 310px 0 0 40px;
+	}
+	#pro3{
+		margin: 560px 0 0 40px;
+	}
+	#pro4{
+		margin: 0px 0 0 280px;
+		padding-right: 0;
+	}
+/*娱乐*/
+/*联系我*/
+}
+@media ( max-width: 480px ){
+/*入口*/
+  	.seven{
+		left: 190px;
+	}
+	#nav ul{
+		width: 350px;
+		font:bold 0/30px Arial;
+	}
+/*个人信息*/
+	#pers1{
+		width: 330px;
+		padding: 60px 0px 20px 0px;
+	}
+	#pers2{
+		margin: 50px 0 0 40px;
+	}
+	#pers3{
+		margin:50px 0 0 36px;
+	}
+/*技能介绍*/
+	#sec3 {
+		padding: 6em 0em 4em 0em;
+	}
+	#skill {
+		margin: 3em 0 3em 1em;
+	}
+
+/*学生工作经历*/
+	#timebox {
+		margin-left: 80px;
+	}
+	#timeline {
+		width: 350px;
+	}
+	#stubox {
+		margin-left: 40px;
+	}
+
+/*项目介绍*/
+	#sec5 #pro1 img{
+		width: 190px;
+		height: 150px;
+	}
+	#sec5 #pro2 img{
+		width: 300px;
+		height: 140px;
+	}
+	#sec5 #pro3 img{
+		width: 300px;
+		height: 140px;
+		
+	}
+	#sec5 #pro4 img{
+		width: 100px;
+		height: 160px;		
+	}
+	#pro1{
+		margin: 0px 0 0 30px;
+	}
+	#pro2{
+		margin: 300px 0 0 40px;
+	}
+	#pro3{
+		margin: 540px 0 0 40px;
+	}
+	#pro4{
+		margin: 0px 0 0 250px;
+		padding-right: 0;
+	}
+/*娱乐*/
+/*联系我*/
+}
+
+@media ( max-width: 480px ) and ( min-resolution: 2dppx ), ( max-width: 480px ) and ( -webkit-min-device-pixel-ratio: 2 ){
+
+}
